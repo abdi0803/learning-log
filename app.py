@@ -26,6 +26,7 @@ def init_db():
             )
         """)
 
+init_db()
 
 @app.route("/")
 def index():
@@ -51,5 +52,4 @@ def add():
 
 
 if __name__ == "__main__":
-    init_db()
     app.run(debug=True)
